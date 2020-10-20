@@ -1,0 +1,87 @@
+.home {
+    .homeContent {
+      background: linear-gradient(115deg, $color-4 35%, transparent 85%);
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+  
+      &:after {
+        content: 'test';
+        position: absolute;
+        height: 180%;
+        width: 110%;
+        background: url('../../Img/portrait.jpg') no-repeat center/cover;
+        z-index: -1;
+        filter: brightness(35%);
+      }
+  
+      .content {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        font-family: $font-1;
+  
+        h1 {
+          font-size: 3rem;
+          font-family: $font-3;
+          color: $white;
+          padding: 0 0 5rem;
+          text-transform: uppercase;
+          text-shadow: 3px 6px 2px $black;
+          animation: showup 3s 1;
+          @keyframes showup {
+            0% {opacity:0;}
+            100% {opacity:1;}
+          }
+        }
+        h2 {
+          font-size: 2rem;
+          padding: 1.5rem 0;
+          color: $white;
+          text-shadow: 4px 4px 1px $black;
+          animation: slidein 4s 1;
+          @keyframes slidein {
+            0% { margin-left:-800px; }
+            20% { margin-left:-800px; }
+            35% { margin-left:0px; }
+            100% { margin-left:0px; }
+          }
+        }
+
+        .pdf {
+          margin-top: 10rem;
+          a {
+            font-size: 1.5rem;
+            background: $color-3;
+            padding: 1rem 2rem;
+            border-radius: 5%;
+            box-shadow: 0 5px 1px rgb(15, 15, 15);
+            transition: 0.2s ease;
+  
+            &:hover {
+              background: $color-6;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width:992px){
+    .homeContent {
+      background: linear-gradient(115deg, $color-4 20%, transparent 35%) !important;
+      &:after {
+      background: url('../../Img/portrait.jpg') no-repeat 70%/cover !important;
+      }
+      h1 {
+        font-size: 3rem !important;
+      }
+      h2 {
+        font-size: 1.8rem !important;
+      }
+      .pdf {
+        margin-top: 1rem !important;
+      }
+    }
+  }
