@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import Home from './Pages/Home';
 import Contact from './Pages/Contact';
 import Knowledges from './Pages/Knowledges';
@@ -9,7 +9,8 @@ import Portfolio from './Pages/Portfolio';
 const App = () => {
     return (
         <>
-            <BrowserRouter>
+            <HashRouter basename={window.location.pathname || ''}>
+            
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/competences" component={Knowledges} />
@@ -17,7 +18,7 @@ const App = () => {
                     <Route path="/contact" component={Contact} />
                     <Route component={NotFound} />
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
         </>
     );
 };

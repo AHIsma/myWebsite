@@ -15,7 +15,8 @@ export const portfolioData = [
       languagesIcons: ['fab fa-js','fab fa-php','far fa-file-code','fas fa-database'],
       source: 'https://github.com/yPROGGZ/ProjetWeb',
       info: 'Ce projet Web consistait à créer un site vitrine du bureau des étudiants du campus pour vendre des goodies et y intégrer une base de données (PHP, mySQL) voire un gestionnaire d’évènements (C.R.U.D.)',
-      picture: './media/bde.gif'
+      picture: './Media/bde.gif',
+      gif: './Media/sitebde.png'
     },
     {
       id: 3,
