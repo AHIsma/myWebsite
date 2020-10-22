@@ -25,9 +25,7 @@ class contact extends Component {
             </li>
             <li>
               <i className="far fa-envelope"></i>
-              <CopyToClipboard text="ismail.aithaddou@viacesi.fr">
-                <span className="clickInput" onClick={() => { alert('E-mail copié !'); }}>ismail.aithaddou@viacesi.fr</span>
-              </CopyToClipboard>
+              <a href="mailto:ismail.aithaddou@viacesi.fr" target="_blank" rel="noopener noreferrer">ismail.aithaddou@viacesi.fr</a>
             </li>
           </ul>
         </div>
