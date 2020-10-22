@@ -1,7 +1,6 @@
 .home {
     .homeContent {
-      
-      background: linear-gradient(115deg, $color-6 10%, transparent 40%);
+      background: linear-gradient(115deg, $white 10%, transparent 10%);
       &:after {
         content: 'test';
         position: absolute;
@@ -28,7 +27,7 @@
           font-size: 3rem;
           font-family: $font-3;
           color: $white;
-          padding: 0 0 5rem;
+          padding: 0 2rem 5rem;
           text-transform: uppercase;
           text-shadow: 1px 6px 2px $black;
           animation: showup 3s 1;
