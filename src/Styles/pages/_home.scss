@@ -71,6 +71,7 @@
   }
   @media (max-width:992px){
     .homeContent {
+      background: linear-gradient(160deg, $white 6%, transparent 0%) !important;
       &:after {
       background: url('../../Img/bckgrnd3.jpeg') no-repeat center/cover;
       }
