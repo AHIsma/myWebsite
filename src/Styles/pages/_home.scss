@@ -1,7 +1,16 @@
 .home {
     .homeContent {
       
-      background: url('../../Img/portrait.jpeg') no-repeat center/cover;
+      background: linear-gradient(115deg, $color-6 10%, transparent 40%);
+      &:after {
+        content: 'test';
+        position: absolute;
+        height: 100%;
+        width: inherit;
+        background: url('../../Img/bckgrnd3.jpeg') no-repeat center/cover;
+        z-index: -1;
+        filter: brightness(30%);
+      }
       width: 100%;
       min-height: 100vh;
       position: relative;
@@ -63,7 +72,9 @@
   }
   @media (max-width:992px){
     .homeContent {
-      background: url('../../Img/portrait.jpeg') no-repeat 70%/cover !important;
+      &:after {
+      background: url('../../Img/bckgrnd3.jpeg') no-repeat center/cover;
+      }
       h1 {
         font-size: 3rem !important;
       }
