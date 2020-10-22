@@ -15,8 +15,8 @@ class Languages extends Component {
       {id: 3, value: "NodeJS/PHP/SQL", xp:0.9,icon:"fas fa-server"},
       {id: 4, value: "Java (POO)", xp:0.9,icon:"fab fa-java"},
       {id: 5, value: "WINDEV/WEBDEV 25", xp:1,icon:"fas fa-laptop-code"},
-      {id: 4, value: "Python3 (Robotique)", xp:0.5,icon:"fab fa-python"},
-      {id: 6, value: "Expertise logiciels (pack office, CISCO ASDM/Packet Tracer)", xp:2,icon:"fab fa-windows"},
+      {id: 6, value: "Python3 (Robotique)", xp:0.5,icon:"fab fa-python"},
+      {id: 7, value: "Expertise logiciels (pack office, CISCO ASDM/Packet Tracer)", xp:2,icon:"fab fa-windows"},
     ]
   };
 

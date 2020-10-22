@@ -1,20 +1,13 @@
 .home {
     .homeContent {
-      background: linear-gradient(115deg, $color-4 35%, transparent 85%);
+      
+      background: url('../../Img/portrait.jpeg') no-repeat center/cover;
       width: 100%;
       min-height: 100vh;
       position: relative;
       overflow: hidden;
   
-      &:after {
-        content: 'test';
-        position: absolute;
-        height: 180%;
-        width: 110%;
-        background: url('../../Img/portrait.jpg') no-repeat center/cover;
-        z-index: -1;
-        filter: brightness(35%);
-      }
+      
   
       .content {
         position: absolute;
@@ -28,7 +21,7 @@
           color: $white;
           padding: 0 0 5rem;
           text-transform: uppercase;
-          text-shadow: 3px 6px 2px $black;
+          text-shadow: 1px 6px 2px $black;
           animation: showup 3s 1;
           @keyframes showup {
             0% {opacity:0;}
@@ -39,7 +32,7 @@
           font-size: 2rem;
           padding: 1.5rem 0;
           color: $white;
-          text-shadow: 4px 4px 1px $black;
+          text-shadow: 2px 2px 1px $black;
           animation: slidein 4s 1;
           @keyframes slidein {
             0% { margin-left:-800px; }
@@ -70,18 +63,16 @@
   }
   @media (max-width:992px){
     .homeContent {
-      background: linear-gradient(115deg, $color-4 20%, transparent 35%) !important;
-      &:after {
-      background: url('../../Img/portrait.jpg') no-repeat 70%/cover !important;
-      }
+      background: url('../../Img/portrait.jpeg') no-repeat 70%/cover !important;
       h1 {
         font-size: 3rem !important;
       }
       h2 {
         font-size: 1.8rem !important;
+        animation: none !important;
       }
       .pdf {
-        margin-top: 1rem !important;
+        margin: .5rem !important;
       }
     }
   }

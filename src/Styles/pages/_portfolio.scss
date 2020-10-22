@@ -228,16 +228,17 @@
       }
     }
   }
-  @media (max-width: 520px){
+  @media (max-width: 660px){
     .radioDisplay {
       display: none !important;
+      padding: 2rem 4rem !important;
     }
     .portfolioContent {
       grid-template-rows: 1fr !important;
   
       .project {
         grid-template-rows: 20px 40px 200px 20px !important;
-        width: 60% !important;
+        width: 65% !important;
   
         img {
           height: 100% !important;
