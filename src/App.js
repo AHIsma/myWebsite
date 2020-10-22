@@ -9,8 +9,7 @@ import Portfolio from './Pages/Portfolio';
 const App = () => {
     return (
         <>
-            <HashRouter basename={window.location.pathname || ''}>
-            
+            <HashRouter>
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/competences" component={Knowledges} />
