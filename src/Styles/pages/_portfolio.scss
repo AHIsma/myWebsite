@@ -239,6 +239,9 @@
       .project {
         grid-template-rows: 20px 40px 180px 30px !important;
         width: 65% !important;
+        .infosContent {
+          width: 100% !important;
+        }
   
         img {
           height: 100% !important;
