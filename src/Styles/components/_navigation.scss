@@ -90,6 +90,15 @@
   .socialNetwork {
     grid-area: 3;
     position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      background: $color-4;
+      border-radius: 50px;
+      width: 250px;
+      height: .1em;
+      margin-left: .6em;
+    }
     ul {
       display: flex;
       @include verticalCenter;

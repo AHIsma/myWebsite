@@ -6,7 +6,7 @@
         position: absolute;
         height: 100%;
         width: inherit;
-        background: url('../../Img/bckgrnd3.jpeg') no-repeat center/cover;
+        background: url('../../Img/bckgrnd5.webp') no-repeat center/cover;
         z-index: -1;
         filter: brightness(30%);
       }
@@ -27,7 +27,7 @@
           font-size: 3rem;
           font-family: $font-3;
           color: $white;
-          padding: 0 2rem 5rem;
+          padding: 0 0rem 5rem;
           text-transform: uppercase;
           text-shadow: 1px 6px 2px $black;
           animation: showup 3s 1;
@@ -51,7 +51,7 @@
         }
 
         .pdf {
-          margin-top: 10rem;
+          margin-top: 5rem;
           a {
             font-size: 1.5rem;
             background: $color-3;
@@ -73,17 +73,22 @@
     .homeContent {
       background: linear-gradient(160deg, $white 6%, transparent 0%) !important;
       &:after {
-      background: url('../../Img/bckgrnd3.jpeg') no-repeat center/cover;
+      background: url('../../Img/bckgrnd5.webp') no-repeat center/cover;
       }
-      h1 {
-        font-size: 3rem !important;
-      }
-      h2 {
-        font-size: 1.8rem !important;
-        animation: none !important;
-      }
-      .pdf {
-        margin: .5rem !important;
+      .content{
+        top: 10% !important;
+        h1 {
+          padding: 1rem 0rem 1.5rem !important;
+          font-size: 3rem !important;
+        }
+        h2 {
+          padding: 1rem 0.5rem 2rem !important;
+          font-size: 1.8rem !important;
+          animation: none !important;
+        }
+        .pdf {
+          margin: .5rem !important;
+        }
       }
     }
   }
