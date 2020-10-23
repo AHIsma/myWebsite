@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b1bcef741be52f3c243a15c30f2aea9b",
+    "revision": "e0575b13ea72c708e398121721b53e58",
     "url": "/myWebsite/index.html"
   },
   {
-    "revision": "07841665a3afad120e1f",
-    "url": "/myWebsite/static/css/main.61b38994.chunk.css"
+    "revision": "c552350a071c8569ab5f",
+    "url": "/myWebsite/static/css/main.e2c38155.chunk.css"
   },
   {
     "revision": "db5be5a45d22c387937b",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/myWebsite/static/js/2.27c85a06.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "07841665a3afad120e1f",
+    "revision": "c552350a071c8569ab5f",
     "url": "/myWebsite/static/js/main.f566ca4e.chunk.js"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/myWebsite/static/js/runtime-main.07342107.js"
   },
   {
-    "revision": "4a938ba2416270252c7925960747a6e3",
-    "url": "/myWebsite/static/media/bckgrnd3.4a938ba2.jpeg"
+    "revision": "5f8cdc45b55aeb4a53e364cf52f65bc5",
+    "url": "/myWebsite/static/media/bckgrnd5.5f8cdc45.webp"
   },
   {
     "revision": "bd0d7f87bb1d31b9490598c7b8b1412c",
