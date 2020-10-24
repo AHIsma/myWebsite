@@ -35,7 +35,7 @@ class contact extends Component {
               <h4>LinkedIn</h4>
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/yPROGGZ" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/AHIsma" target="_blank" rel="noopener noreferrer">
               <h4>Github</h4>
               <i className="fab fa-github"></i>
             </a>
