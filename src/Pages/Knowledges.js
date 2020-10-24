@@ -18,7 +18,6 @@ class knowledges extends Component {
         <Hobbies/>
       </div>
     </div>
-    
   );
 };
 }

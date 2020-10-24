@@ -14,9 +14,6 @@ export default class componentName extends Component {
 
   render() {
     const {name, languagesIcons, source, info, picture,gif} = this.props.item;
-
-    
-
     return (
       <div className="project">
 

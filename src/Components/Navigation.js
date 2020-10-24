@@ -1,9 +1,27 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
+    const [scrolled,setScrolled]=React.useState(false);
+    const handleScroll=() => {
+        const offset=window.scrollY;
+        const size=window.innerWidth;
+        if(offset > 0 && size < 992){
+            setScrolled(true);
+        }
+        else{
+            setScrolled(false);
+        }
+    }
+    useEffect(() => {
+        window.addEventListener('scroll',handleScroll)
+    })
+    let navbarClasses=['sidebar'];
+        if(scrolled){
+            navbarClasses.push('scrolled');
+        }
     return (
-        <div className="sidebar">
+        <div className={navbarClasses.join(" ")}>
             <div className="id">
                 <div className="idContent">
                     <img src="./Media/Initials.png" alt="portrait-me"/>

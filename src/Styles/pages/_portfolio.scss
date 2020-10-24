@@ -189,7 +189,7 @@
           border-radius: 10%;
           padding: 1rem;
           transition: .2s;
-  
+
           &:hover {
             background: $color-3;
           }
@@ -237,7 +237,7 @@
       grid-template-rows: 1fr !important;
   
       .project {
-        grid-template-rows: 20px 40px 180px 30px !important;
+        grid-template-rows: 20px 60px 180px 30px !important;
         width: 65% !important;
         .infosContent {
           width: 100% !important;

@@ -4,9 +4,10 @@ export const portfolioData = [
       name: 'Projet IntraCom',
       languages: ['Projets Développement logiciel','Projets Réseaux et système'],
       languagesIcons: ['fab fa-js','fas fa-laptop-code','fab fa-windows'],
-      source: 'https://www.champagne-palmer.fr/',
-      info: 'Conception des fichiers de données et des maquettes, développement et déploiement sur serveur d’un site intranet de gestion commerciale pour la maison de champagne. Analyse de besoin, gestion de base de données, configuration d’une zone démilitarisée du réseau (DMZ)',
-      picture: './Media/palmer.png'
+      source: '',
+      info: 'Conception des fichiers de données et des maquettes, développement et déploiement sur serveur d’un site intranet de gestion commerciale. Analyse de besoin, gestion de base de données, configuration d’une zone démilitarisée du réseau (DMZ)',
+      picture: './Media/palmer.png',
+      gif: './Media/palmer.gif'
     },
     {
       id: 2,
