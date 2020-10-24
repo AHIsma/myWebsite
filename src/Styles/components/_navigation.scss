@@ -90,7 +90,7 @@
   .socialNetwork {
     grid-area: 3;
     position: relative;
-    &:before{
+    &:before,&:after{
       content: '';
       position: absolute;
       background: $color-4;
