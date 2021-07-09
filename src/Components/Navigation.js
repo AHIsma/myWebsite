@@ -24,7 +24,7 @@ const Navigation = () => {
         <div className={navbarClasses.join(" ")}>
             <div className="id">
                 <div className="idContent">
-                    <img src="./Media/Initials.png" alt="portrait-me"/>
+                    <img src="..\..\Media\Initials.png" alt="portrait-me"/>
                 </div>
             </div>
             <div className="navigation">
