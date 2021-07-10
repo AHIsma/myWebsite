@@ -1,9 +1,10 @@
 .knowledges {
+  height: 100vh;
     .knowledgesContent {
       margin: .1rem;
       position: relative;
       width: 100%;
-      height: 100vh;
+      
       overflow: hidden;
       display: grid;
       grid-template-columns: 50% 1fr 1fr;
@@ -30,6 +31,7 @@
         grid-area: L;
         margin-bottom: .5rem;
         display: grid;
+        overflow-y: scroll;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
@@ -78,6 +80,7 @@
         }
         .languagesList {
           padding-top: .6rem;
+          padding-bottom: .6rem;
   
           li {
             color: $black;
