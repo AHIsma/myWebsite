@@ -5,7 +5,7 @@ import Contact from './Pages/Contact';
 import Knowledges from './Pages/Knowledges';
 import NotFound from './Pages/NotFound';
 import Portfolio from './Pages/Portfolio';
-//import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
     return (

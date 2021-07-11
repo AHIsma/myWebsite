@@ -4,7 +4,6 @@
       margin: .1rem;
       position: relative;
       width: 100%;
-      
       overflow: hidden;
       display: grid;
       grid-template-columns: 50% 1fr 1fr;
@@ -38,10 +37,10 @@
           "L"
           "F";
   
-        .languageDisplay {
+        .languagesDisplay {
           grid-area: L;
         }
-        .frameworkDisplay {
+        .frameworksDisplay {
           grid-area: F;
         }
         h3 {
@@ -65,22 +64,27 @@
               text-align: right;
               width: 44%;
             }
+            &:nth-child(4){
+              text-align: right;
+              width: 44%;
+            }
           
             &:nth-child(2):before,
-            &:nth-child(3):before {
+            &:nth-child(3):before,
+            &:nth-child(4):before {
               content:'';
               background: $black;
               position: absolute;
-              height: 20px;
-              width: 3px;
+              height: 15px;
+              width: 2px;
               border-radius: 35%;
               transform: translate(9px, 19px);
             }
           }
         }
         .languagesList {
-          padding-top: .6rem;
-          padding-bottom: .6rem;
+          padding-top: .1rem;
+          padding-bottom: .1rem;
   
           li {
             color: $black;
@@ -117,8 +121,9 @@
         grid-area: E;
         margin: 0 0 .5rem .5rem;
         display: grid;
+        overflow-y: scroll;
         grid-template-columns: 1fr;
-        grid-template-rows: 5% 1fr 1fr;
+        grid-template-rows: 8% 1fr 1fr;
         grid-template-areas: 
           "1"
           "2"
@@ -137,7 +142,7 @@
         h5 {
           color: $color-6;
           font-size: 1.5rem;
-          padding: 0.5rem 0 0.5rem 1rem;
+          padding: 0.5rem 0 0.01rem 1rem;
         }
         p {
           text-align: justify;

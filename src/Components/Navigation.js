@@ -8,8 +8,7 @@ const Navigation = () => {
         const size=window.innerWidth;
         if(offset > 0 && size < 992){
             setScrolled(true);
-        }
-        else{
+        }else{
             setScrolled(false);
         }
     }
@@ -56,19 +55,47 @@ const Navigation = () => {
                 </ul>
             </div>
             <div className="socialNetwork">
-                <ul>
-                    <li>
-                        <a href="mailto:ismail.aithaddou@viacesi.fr" target="_blank" rel="noopener noreferrer">
-                        <i className="fas fa-envelope-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/ismail-ait-haddou-664324194/" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/ismailaitt" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-facebook-square"></i></a>
-                    </li>
+                <ul className="wrapper">
+                    <a href="mailto:ismail.aithaddou@viacesi.fr" target="_blank" rel="noopener noreferrer">
+                        <li className="icon mail">
+                            <div className="tooltip">
+                                E-mail
+                            </div>
+                            <span>
+                                <i className="fas fa-envelope"></i>
+                            </span>
+                        </li>
+                    </a>
+                    <a href="https://github.com/AHIsma" target="_blank" rel="noopener noreferrer">
+                        <li className="icon github">
+                            <div className="tooltip" >
+                                Github
+                            </div>
+                            <span>
+                                <i className="fab fa-github"></i>
+                            </span>
+                        </li>
+                    </a>
+                    <a href="https://www.facebook.com/ismailaitt" target="_blank" rel="noopener noreferrer">
+                        <li className="icon facebook">
+                            <div className="tooltip" >
+                                Facebook
+                            </div>
+                            <span>
+                                <i className="fab fa-facebook-f"></i>
+                            </span>
+                        </li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ismail-ait-haddou-664324194/" target="_blank" rel="noopener noreferrer">
+                        <li className="icon linkedin">
+                            <div className="tooltip">
+                                LinkedIn
+                            </div>
+                            <span>
+                                <i className="fab fa-linkedin"></i>
+                            </span>
+                        </li>
+                    </a>
                 </ul>
             </div>
             <div className="signature">

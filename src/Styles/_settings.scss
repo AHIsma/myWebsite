@@ -61,7 +61,7 @@ li {
   list-style-type: none;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: $black;
   cursor: pointer;
 }
