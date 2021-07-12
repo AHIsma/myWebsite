@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { withTranslation } from 'react-i18next';
 
-export default class componentName extends Component {
+
+class componentName extends Component {
   state = {
     showInfo: false
   }
@@ -13,6 +15,7 @@ export default class componentName extends Component {
   
 
   render() {
+    const {t} = this.props;
     const {name, languagesIcons, source, info, picture,gif} = this.props.item;
     return (
       <div className="project">
@@ -35,14 +38,14 @@ export default class componentName extends Component {
                 <div className="head">
                   <h2>{name}</h2>
                   <div className="sourceCode">
-                    <a href={source} rel="noopener noreferrer" className="button" target="_blank">Lien</a>
+                    <a href={source} rel="noopener noreferrer" className="button" target="_blank">{t('link')}</a>
                   </div>
                 </div>
                 <div className="gif">
                   <p className="text">{info}</p>
                   <img className="gif" src={gif} alt=""/>
                 </div>
-                <div className="button return" onClick={this.handleInfo}>Retourner sur la page</div>
+                <div className="button return" onClick={this.handleInfo}>{t("back")}</div>
               </div>
             </div>
           )
@@ -51,3 +54,5 @@ export default class componentName extends Component {
     );
   }
 }
+
+export default withTranslation() (componentName);

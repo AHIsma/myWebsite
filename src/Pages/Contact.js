@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import Navigation from '../Components/Navigation';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { withTranslation } from 'react-i18next';
 
 class contact extends Component {
-
   render() {
+    const {t} = this.props;
     return (
     <div className="contact">
       <Navigation />
       <div className="contactContent">
         <div className="header"></div>
         <div className="contactBox">
-          <h1>Contactez moi</h1>
+          <h1>{t('contact_me')}</h1>
           <ul>
             <li>
               <i className="fas fa-map-marker-alt"></i>
@@ -47,4 +48,4 @@ class contact extends Component {
   }
 }
 
-export default contact;
+export default withTranslation() (contact);

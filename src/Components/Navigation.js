@@ -1,7 +1,10 @@
 import React,{useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
+import LanguageSelect from './LanguageSelect';
+import { useTranslation } from 'react-i18next';
 
 const Navigation = () => {
+    const { t } = useTranslation();
     const [scrolled,setScrolled]=React.useState(false);
     const handleScroll=() => {
         const offset=window.scrollY;
@@ -22,8 +25,13 @@ const Navigation = () => {
     return (
         <div className={navbarClasses.join(" ")}>
             <div className="id">
-                <div className="idContent">
-                    <img src="./Media/Initials.png" alt="portrait-me"/>
+                <NavLink exact to="/" activeClassName="navActive">
+                    <div className="idContent">
+                        <img src="./Media/Initials.png" alt="portrait-me"/>
+                    </div>
+                </NavLink>
+                <div>
+                    <LanguageSelect />
                 </div>
             </div>
             <div className="navigation">
@@ -31,13 +39,13 @@ const Navigation = () => {
                     <li>
                         <NavLink exact to="/" activeClassName="navActive">
                             <i className="fas fa-home"></i>
-                            <span>Accueil</span>
+                            <span>{t('home')}</span>
                         </NavLink>
                     </li>
                     <li>
                         <NavLink exact to="/competences" activeClassName="navActive">
                             <i className="fas fa-mountain"></i>
-                            <span>Compétences</span>
+                            <span>{t('skills')}</span>
                         </NavLink>
                     </li>
                     <li>
@@ -100,7 +108,7 @@ const Navigation = () => {
             </div>
             <div className="signature">
                     <img src="./Media/cesico.png" alt="logo-cesi"/>
-                    <p>Etudiant au CESI de Reims | France </p>
+                    <p>{t('footer')}</p>
             </div>
         </div>
     );

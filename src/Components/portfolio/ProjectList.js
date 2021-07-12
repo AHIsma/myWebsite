@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import Project from './Project';
 import { portfolioData } from './data/portfolioData';
+import { withTranslation } from 'react-i18next';
 
-export default class ProjectList extends Component {
+class ProjectList extends Component {
+  s = this.props
   state = {
     radios: [
       {id: 1, value: "Projets Développement logiciel"},
       {id: 2, value: "Projets Réseaux et système"},
     ],
     projects:portfolioData,
-    selectedRadio: "Projets Développement logiciel"
+    selectedRadio: ""
   };
 
   handleRadio = (event) => {
@@ -19,7 +21,20 @@ export default class ProjectList extends Component {
 
   render() {
     let {projects, radios, selectedRadio} = this.state;
-
+    const {t} = this.props
+    if (!selectedRadio) {
+      selectedRadio = t("radio_1")
+    }
+    radios.forEach(radio => {
+        radio.value = t("radio_"+radio.id)
+    });
+    projects.forEach(project => {
+        project.name = t("t_"+project.id)
+        project.info = t("desc_"+project.id)
+        project.languages.forEach((language, index) => {
+          project.languages[index] = t("radio_"+(index+1))
+        });
+    });
     return (
       <div className="portfolioContent">      
         <ul className="radioDisplay">
@@ -47,7 +62,6 @@ export default class ProjectList extends Component {
             projects
               .filter(item => item.languages.includes(selectedRadio))
               .map(item => {
-
                 return(
                   <Project 
                     key={item.id} 
@@ -61,3 +75,4 @@ export default class ProjectList extends Component {
     );
   }
 }
+export default withTranslation() (ProjectList);

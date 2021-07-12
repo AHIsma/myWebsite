@@ -1,33 +1,35 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Experience = () => {
+  const { t } = useTranslation();
   return (
     <div className="experience">
-      <h3>Expérience Professionnelle</h3>
+      <h3>{t('xp_pro')}</h3>
         <div className="exp-1">
-          <h4>Développeur Web Full Stack</h4>
-          <h5>Henley IT (Janvier - Avril 2021)</h5>
-          <h5>Objectifs réalisés :</h5>
+          <h4>{t('xp_1')}</h4>
+          <h5>Henley IT {t('date_1')}</h5>
+          <h5>{t('tasks')}</h5>
           <p>
-            Collaboration avec une équipe de développeurs dans le développement en Scrum de quatre applications web SAAS
+            {t('p_1')}
           </p>
           <p>
-            Secteurs : CSE des entreprises, Médecine du sport
+            {t('p_2')}
           </p>
-          <h5>Acquis supplémentaires :</h5>
+          <h5>{t('tasks_alt')}</h5>
           <p>
-            Analyse de besoin, analyse des cas d’utilisation, algorithmes et structures de données, Programmation web orientée objet, méthodes Agile (Scrum)
+            {t('p_3')}
           </p>
         </div>
         <div className="exp-2">
-        <h4>Chargé de projets informatiques</h4>
-          <h5>Palmer & Co (Avril-Juillet 2020)</h5>
-          <h5>Objectifs réalisés :</h5>
+        <h4>{t('xp_2')}</h4>
+          <h5>Palmer & Co {t('date_2')}</h5>
+          <h5>{t('tasks')}</h5>
           <p>
-            Conception des fichiers de données et des maquettes, développement et déploiement sur serveur d’un site intranet de gestion commerciale pour la maison de champagne.
+          {t('p_4')}
           </p>
-          <h5>Acquis supplémentaires :</h5>
-          <p>Analyse de besoin, gestion de base de données, configuration d’une zone démilitarisée du réseau (DMZ).</p>
+          <h5>{t('tasks_alt')}</h5>
+          <p>{t('p_5')}</p>
         </div>
       </div>
   );

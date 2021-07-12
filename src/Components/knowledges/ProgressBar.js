@@ -5,10 +5,10 @@ const ProgressBar = (props) => {
     <div className={props.className}>
       <h3>{props.title}</h3>
       <div className="years">
-        <span>Années d'expérience</span>
-        <span>1 an</span>
-        <span>2 ans</span>
-        <span>3 ans</span>
+        <span>{props.t('xp_yrs')}</span>
+        <span>1 {props.t('yr')}</span>
+        <span>2 {props.t('yrs')}</span>
+        <span>3 {props.t('yrs')}</span>
       </div>
       
       <ul>

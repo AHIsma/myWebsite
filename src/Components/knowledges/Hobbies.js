@@ -1,25 +1,27 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Hobbies = () => {
+  const { t } = useTranslation();
   return (
     <div className="hobbies">
-      <h3>Centres d'Intérêts</h3>
+      <h3>{t('interests')}</h3>
       <ul>
         <li className="hobby">
           <i className="fas fa-globe-europe"></i>
-          <span>Géopolitique</span>
+          <span>{t('geopolitic')}</span>
         </li>
         <li className="hobby">
           <i className="fas fa-brain"></i>
-          <span>Psychologie</span>
+          <span>{t('psych')}</span>
         </li>  
         <li className="hobby">
           <i className="fas fa-running"></i>
-          <span>Course à pied</span>
+          <span>{t('run')}</span>
         </li>
         <li className="hobby">
           <i className="fas fa-dumbbell"></i>
-          <span>Musculation</span>
+          <span>{t('bodyb')}</span>
         </li>
         <li className="hobby">
           <i className="fas fa-futbol"></i>
