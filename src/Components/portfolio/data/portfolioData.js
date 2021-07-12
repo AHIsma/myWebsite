@@ -5,7 +5,7 @@ export const portfolioData = [
       languages: ['Projets Développement logiciel'],
       languagesIcons: ['fab fa-angular','fab fa-symfony', 'far fa-file-code', 'fas fa-database'],
       source: 'https://www.henley.fr/',
-      info: 'Collaboration avec une équipe de développeurs dans le développement en Scrum d\'une application web destinée aux médecins d\’un cabinet pluridisciplinaire spécialisé dans la médecine du sport.',
+      info: 'Collaboration avec une équipe de développeurs dans le développement en Scrum d\'une application web destinée aux médecins d\'un cabinet pluridisciplinaire spécialisé dans la médecine du sport.',
       picture: './Media/OtherHenley.png',
       gif: './Media/OtherHenley.gif'
     },
