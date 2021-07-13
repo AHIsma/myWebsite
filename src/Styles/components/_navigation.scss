@@ -282,6 +282,10 @@ $split-color:     #b1b1b1;
       display: flex;
       text-align: unset;
       width: min-content;
+      .lang {
+        align-items: center;
+        display: flex;
+      }
     }
 
     .navigation {

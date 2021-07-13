@@ -37,9 +37,7 @@ const Navigation = () => {
                     </ul>
                     </div>
                 </NavLink>
-                <div>
-                    <LanguageSelect />
-                </div>
+                <LanguageSelect />
             </div>
             <div className="navigation mt-4">
                 <ul>
