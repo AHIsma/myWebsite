@@ -10,7 +10,7 @@ const Home = () => {
             <div className="homeContent">
                 <div className="content">
                     <h1>{t('welcome')}</h1>
-                    <h2>{t('intro')}</h2>
+                    <h2 style={{'white-space': "pre-line"}}>{t('intro')}</h2>
                     <h2>{t('specialty')}</h2>
                     <div className="pdf">
                         <a target="_blank" rel="noreferrer" href={t('link_cv')}>
