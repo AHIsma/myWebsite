@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import LanguageSelect from './LanguageSelect';
 import { useTranslation } from 'react-i18next';
 
+
 const Navigation = () => {
     const { t } = useTranslation();
     const [scrolled,setScrolled]=React.useState(false);
@@ -27,7 +28,13 @@ const Navigation = () => {
             <div className="id">
                 <NavLink exact to="/" activeClassName="navActive">
                     <div className="idContent">
-                        <img src="./Media/Initials.png" alt="portrait-me"/>
+                    <ul class="Logo_wrapper" >
+                        <li class="Logo">
+                          <img src="./Media/Initials.png" alt="portrait-me"/>
+                          <span class="Mask"><span><img src="./Media/Initials.png" alt="portrait-me"/></span></span>
+                          <span class="Mask"><span><img src="./Media/Initials.png" alt="portrait-me"/></span></span>
+                        </li>
+                    </ul>
                     </div>
                 </NavLink>
                 <div>

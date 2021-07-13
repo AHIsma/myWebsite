@@ -25,7 +25,7 @@ const LanguageSelect = () => {
 
   return (
     <div className="justify-content-start align-items-center language-select-root">
-      <Button className="w-25 mt-2" onClick={({ currentTarget }) => setMenuAnchor(currentTarget)}>
+      <Button className="w-25" onClick={({ currentTarget }) => setMenuAnchor(currentTarget)}>
         <img className="w-50" src={languageMap[selected].icon} alt="flag"></img>
         <ArrowDropDown fontSize="small" />
       </Button>

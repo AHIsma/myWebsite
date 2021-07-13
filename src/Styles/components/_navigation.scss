@@ -1,3 +1,9 @@
+$perspective:     60rem;
+$font-size:       4.25rem;
+$split-position:  49%;
+$split-thickness: 4px;
+$split-color:     #b1b1b1;
+
 .sidebar {
   min-height: 100vh;
   background: $white;
@@ -30,15 +36,70 @@
       img {
         border-radius: 30%;
         width: 25%;
-        box-shadow: 0 0px 0px 1px $color-4;
-        animation: hoverin 1.9s linear 0.1s infinite;
-        @keyframes hoverin {
-          0%   {transform: scale(1); box-shadow: 0 0px 0px 1px $color-4;}
-          50%  {transform: scale(1.1);box-shadow:none;}
-          100% {transform:scale(1);box-shadow: 0 0px 0px 1px $color-4;}
+      }
+            // === Menu <ul> =====
+      .Logo_wrapper {
+        font-size: $font-size;
+        line-height: 1;
+        text-transform: uppercase;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      // === Menu item =====
+      .Logo {
+        position: relative;
+        color: transparent;
+        cursor: pointer;
+
+        // === Split Line =====
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: $split-position;
+          left: -10%;
+          right: -10%;
+          height: $split-thickness;
+          border-radius: $split-thickness;
+          margin-top: -($split-thickness / 2);
+          background: $split-color;
+          transform: scale(0);
+          transition: transform .8s cubic-bezier(.16,1.08,.38,.98);
+          z-index: 1;
         }
       }
-      
+
+      // === Top/bottom mask =====
+      .Mask {
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        color: $split-color;
+        top: 0;
+        height: $split-position;
+        transition: all .8s cubic-bezier(.16,1.08,.38,.98);
+
+        span { display: block; }
+      }
+
+      // === Bottom mask specific =====
+      .Mask + .Mask {
+        top: $split-position - 0.1;
+        height: 100 - $split-position + 0.1;
+
+        span { transform: translateY(-$split-position); }
+      }
+
+      // === Where the fun stuff happens =====
+      .Logo:hover,
+      .Logo:active {
+        .Mask { color: #FFF; transform: skewX(12deg) translateX(5px); }
+        .Mask + .Mask { transform: skewX(12deg) translateX(-5px); }
+        &::before { transform: scale(0.5); }
+      }
       
       h3 {
         font-size: 1.5rem;
