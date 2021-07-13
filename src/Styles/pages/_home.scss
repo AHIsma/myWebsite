@@ -91,6 +91,9 @@
         }
         .pdf {
           margin: .5rem !important;
+          a{
+            font-size: unset;
+          }
         }
       }
     }
