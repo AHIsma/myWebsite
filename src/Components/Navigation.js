@@ -28,7 +28,7 @@ const Navigation = () => {
             <div className="id">
                 <NavLink exact to="/" activeClassName="navActive">
                     <div className="idContent">
-                    <ul class="Logo_wrapper" >
+                    <ul class="Logo_wrapper m-0" >
                         <li class="Logo">
                           <img src="./Media/Initials.png" alt="portrait-me"/>
                           <span class="Mask"><span><img src="./Media/Initials.png" alt="portrait-me"/></span></span>
