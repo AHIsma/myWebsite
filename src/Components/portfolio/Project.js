@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
+import $ from 'jquery';
 
 
 class componentName extends Component {
   state = {
     showInfo: false
   }
-
   handleInfo = () => {
     this.setState({
       showInfo:!this.state.showInfo
     })
   }
   
-
+  popup_style = () => {
+      return {
+        top: $(window).scrollTop()+100
+      }
+    }
   render() {
     const {t} = this.props;
     const {name, languagesIcons, source, info, picture,gif} = this.props.item;
     return (
       <div className="project">
-
         <div className="icons">
           {languagesIcons.map(icon =>
             <i className={icon} key={icon}></i>
@@ -34,7 +37,7 @@ class componentName extends Component {
         {
           this.state.showInfo && (
             <div className="showInfos">
-              <div className="infosContent">
+              <div className="infosContent" style={this.popup_style()}>
                 <div className="head">
                   <h2>{name}</h2>
                   <div className="sourceCode">

@@ -271,14 +271,23 @@ $split-color:     #b1b1b1;
 @media (max-width: 992px){
   .sidebar {
     display: flex;
-    min-height: 50px;
+    max-height: 10px;
+    min-height: 50px !important;
     min-width: 100% !important;
-    .id, .socialNetwork {
+    .Logo, .socialNetwork {
       display: none;
     }
+
+    .id {
+      display: flex;
+      text-align: unset;
+      width: min-content;
+    }
+
     .navigation {
       width: 100%;
-      padding: .1rem 1rem;
+      padding: 0;
+      margin-top: 0 !important;
 
       ul {
         display: flex;

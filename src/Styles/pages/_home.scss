@@ -76,8 +76,10 @@
       &:after {
       background: url('../../Img/bckgrnd5.jpeg') no-repeat center/cover;
       }
+      position: unset !important;
+      min-height: 100vh;
       .content{
-        top: 10% !important;
+        top: 20% !important;
         h1 {
           padding: 1rem 0rem 1.5rem !important;
           font-size: 3rem !important;
