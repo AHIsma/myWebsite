@@ -30,12 +30,12 @@
       img {
         border-radius: 30%;
         width: 25%;
-        box-shadow: 0 0px 4px 1px $color-4;
-        animation: hoverin 1.8s linear 3s infinite;
+        box-shadow: 0 0px 0px 1px $color-4;
+        animation: hoverin 1.9s linear 0.1s infinite;
         @keyframes hoverin {
-          0%   {transform: scale(1); box-shadow: 0 0px 4px 1px $color-4;}
+          0%   {transform: scale(1); box-shadow: 0 0px 0px 1px $color-4;}
           50%  {transform: scale(1.1);box-shadow:none;}
-          100% {transform:scale(1);box-shadow: 0 0px 4px 1px $color-4;}
+          100% {transform:scale(1);box-shadow: 0 0px 0px 1px $color-4;}
         }
       }
       

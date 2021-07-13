@@ -34,7 +34,7 @@ const Navigation = () => {
                     <LanguageSelect />
                 </div>
             </div>
-            <div className="navigation">
+            <div className="navigation mt-4">
                 <ul>
                     <li>
                         <NavLink exact to="/" activeClassName="navActive">

@@ -13,11 +13,10 @@
   
     .header {
       grid-area: 1;
-      width: 100%;
-      position: relative;
+      width: 80%;
+      position: absolute;
       background: $color-4;
-      height: 340px;
-  
+      height: 100%;
       &:before {
         content: '';
         width: 100%;

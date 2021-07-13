@@ -10,8 +10,8 @@ import ListItem from "@material-ui/core/ListItem";
 import ListSubheader from "@material-ui/core/ListSubheader";
 
 const languageMap = {
-  en: { label: "English", dir: "ltr", active: false },
-  fr: { label: "Français", dir: "ltr", active: true }
+  en: { label: "English", dir: "ltr", active: false, icon: "./Media/UK.png"},
+  fr: { label: "Français", dir: "ltr", active: true, icon: "./Media/Flag_of_France.png"}
 };
 
 const LanguageSelect = () => {
@@ -25,8 +25,8 @@ const LanguageSelect = () => {
 
   return (
     <div className="justify-content-start align-items-center language-select-root">
-      <Button onClick={({ currentTarget }) => setMenuAnchor(currentTarget)}>
-        {languageMap[selected].label}
+      <Button className="w-25 mt-2" onClick={({ currentTarget }) => setMenuAnchor(currentTarget)}>
+        <img className="w-50" src={languageMap[selected].icon} alt="flag"></img>
         <ArrowDropDown fontSize="small" />
       </Button>
       <Popover
